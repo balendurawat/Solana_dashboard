@@ -4,13 +4,11 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider
-      appId = {process.env.NEXT_PUBLIC_APP_ID}
-      serverUrl = {process.env.NEXT_PUBLIC_SERVER_URL}
+      appId = {process.env.NEXT_API_KEY}
     >
       <Component {...pageProps} />
     </MoralisProvider>
   )
-  
   
 }
 
